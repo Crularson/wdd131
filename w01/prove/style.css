@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+body{
+    margin: 3%;
+    border: solid 1px gray;
+    height: 92vh;
+}
+#statement{
+    text-align: center;
+    font-family: Cinzel;
+}
+
+#statement h1+p{
+    color: lightblue;
+}
+
+hr{
+    background-color: gray;
+    border-color: transparent;
+    height: 1px;
+    opacity: 50%;
+    max-width: 50%;
+}
+main{
+    line-height: 1.5;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+#olist li{
+    text-align: left;
+    padding-bottom: 3%;
+}
+#olist p{
+    font-style: italic;
+    padding: 3%;
+}
+#logo{
+    display: block;
+    margin: 0 auto;
+    max-width: 15%;
+}
