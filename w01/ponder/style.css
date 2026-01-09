@@ -1,0 +1,33 @@
+
+body{
+    border: solid 1px;
+    height: 98vh;
+}
+#content{
+    text-align: center;
+    width: 75%;
+    justify-self: center;
+    
+}
+h1+p{
+color: lightblue;
+font-size: large;
+}
+hr{
+    background-color: lightblue;
+    border-color: lightblue;
+    width: 75%;
+}
+ul{
+    list-style: none;
+    
+}
+hr + img{
+    width: 55%;
+}
+.list{
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
