@@ -79,6 +79,12 @@ nav a{
 .menu-btn{
     display: none;
 }
+.navDisplay{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    color: bla;
+}
 main{
     display: flex;
     flex-direction: row;
