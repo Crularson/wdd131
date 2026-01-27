@@ -6,4 +6,5 @@ selectelem.addEventListener('click',ViewMenu);
 function ViewMenu()
 {
     nav.classList.toggle('navDisplay')
+    selectelem.classList.toggle('navDisplay')
 }

@@ -38,12 +38,14 @@ nav a:hover {
     cursor: pointer;
     border: none;
     background-color: transparent;
+    display: block;
 }
 .bar1, .bar2, .bar3 {
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: transform 0.3s ease-in-out;
 }
 footer {
     text-align: center;
@@ -56,18 +58,31 @@ footer {
     flex-direction: column;
     padding: 15px;
     color: black;
+    
 }
 .navDisplay a{
     padding: 20px;
     color: black;
 }
-.hide{
-    display: none;
+
+.navDisplay .bar1 {
+    transform: translate(0, 16px) rotate(-45deg);
+    transition: transform 0.3s ease-in-out;
+}
+.navDisplay .bar2 {
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
+.navDisplay .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+
 @media screen and (min-width: 700px) {
-nav{
-    display: flex;
+    nav{
+        display: flex;
     justify-content: center;
     flex-direction: row;
 }
@@ -79,11 +94,14 @@ nav a{
 .menu-btn{
     display: none;
 }
+.bar1, .bar2, .bar3 {
+    display: none;
+}
 .navDisplay{
     display: flex;
     flex-direction: row;
     padding: 20px;
-    color: bla;
+    /* color: bla; */
 }
 main{
     display: flex;
