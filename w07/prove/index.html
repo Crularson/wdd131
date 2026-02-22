@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>credit card form</title>
+    <link rel="stylesheet" href="prove.css">
+    <script src="prove.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <div class="cardwrapper">
+            <div class="cardfront">
+
+                <p id="creditCardNumberContainer" class="hide" role="region" aria-labelledby="creditCardLabel">
+                    <label id="creditCardLabel" for="creditCardNumber">Credit Card Number:</label>
+                    <input
+                    type="text"
+                    id="creditCardNumber"
+                    name="creditCardNumber"
+                    pattern="[0-9]{16}"
+                    placeholder="Enter 16 digits"
+                    required
+                    />
+                    <label for="expirationDate">Expiration</label>
+                    <input 
+                    type="text" 
+                    id="month" 
+                    name="expMonth" 
+                    placeholder="MM" 
+                    aria-labelledby="expirationDate">
+                    <div id="cardExpiration">
+                        <label for="expirationDate">EXPIRATION</label>
+                        <input type='text' id='month' name="expMonth" placeholder="MM" aria-labelledby="expirationDate">
+                        <input type='text' id='year' name="expYear" placeholder="YY" aria-labelledby="expirationDate">
+                    </div>
+            </div>
+            <div class="cardback">
+
+                <label for="CVV">CVV/CVC</label>
+                <input type="text"
+                id="CVV"
+                name="CVV"
+                placeholder="XXX"
+                aria-labelledby="CVV">
+            </div>
+            </p>
+
+        </div>
+    <button type="submit">Place Order</button>
+
+
+    </form>
+
+    
+    
+</body>
+</html>
