@@ -1,0 +1,9 @@
+*{
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+}
+body{
+    background-color: rgb(2, 50, 2);
+    color: rgb(106, 186, 106);
+}
