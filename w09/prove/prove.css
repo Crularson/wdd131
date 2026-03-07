@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Cinzel:wght@400..900&display=swap');
+
+html{
+    margin: 1.5rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo{
+    width: 75px;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+#search{
+    display: block;
+    margin: 0 auto;
+    height: 2.5rem;
+    width: 100%;
+}
+.siteTitle{
+    font-family: "Amatic SC","Segoe Print","Bradley Hand",cursive;
+    font-size: 4.5em;
+}
+
+.hLine{
+    width: 100%;
+    height: .5px;
+    background-color: black;
+    margin: 5px auto;
+}
+.recipe-card{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 100%;
+    
+    border: 1.5px solid black;
+    padding: 1.5rem;
+    
+}
+.recipe-img{
+    aspect-ratio: 1/1;
+    max-width: 100%;
+}
+.recipe-title{
+    font-family: "Amatic SC","Segoe Print","Bradley Hand",cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+    color: deepskyblue;
+}
+.recipe-tag{
+    max-width: 20%;
+    margin: .3rem;
+}
+.description{
+    display: none;
+}
+footer{
+    padding: 2rem 0;
+    text-align: center;
+    max-width: 100%;
+}
+.social img{
+    border: 2px solid black;
+}
+
+
+@media (min-width: 600px){
+    .description{
+        display: block;
+    }
+    .recipe-img{
+        max-width: 45%;
+    }
+    .recipe-card{
+        flex-direction: row;
+    }
+    .recipe-info{
+        display: flex;
+        flex-direction: column;
+        margin: .75rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+}
