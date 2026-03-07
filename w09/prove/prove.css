@@ -61,7 +61,8 @@ header{
 footer{
     padding: 2rem 0;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
 }
 .social img{
     border: 2px solid black;
@@ -75,8 +76,17 @@ footer{
     .recipe-img{
         max-width: 45%;
     }
+    #search{
+        max-width: 1000px;
+    }
+    .hLine{
+        max-width: 1000px;
+    }
     .recipe-card{
         flex-direction: row;
+        max-width: 1000px;
+        margin: 0 auto;
+        box-sizing: border-box;
     }
     .recipe-info{
         display: flex;
@@ -87,6 +97,7 @@ footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+        margin: 0 auto;
     }
 
 }
