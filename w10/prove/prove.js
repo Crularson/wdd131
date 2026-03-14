@@ -279,4 +279,68 @@ const recipes = [
 		recipeYield: '12 servings',
 		rating: 4
 	}
+
+   
+    
 ]            
+
+ function recipeTemplate(recipe){
+        return `
+        <div class="recipe-card">
+        <img class="recipe-img" src="${recipe.image}" alt="${recipe.name}">
+        <div class="recipe-info">
+            <button class="recipe-tag">${recipe.tags[0]}</button>
+            <h2 class="recipe-title">${recipe.name}</h2>
+            <span class="rating" role="img" aria-label="Rating: ${recipe.rating} out of 5 stars">
+    ${renderStars(recipe.rating)}
+</span>
+            <p class="description">${recipe.description}</p>
+        </div>
+    </div>
+        `
+ }
+
+ function renderStars(rating){
+    const starstring = [];
+    for (let i = 0; i < Math.floor(rating); i++){
+        starstring.push("⭐");
+    }
+    while (starstring.length < 5){
+        starstring.push("☆")
+    }
+    return starstring.join("")
+ }
+ function renderRecipes(recipeList){
+    const container = document.querySelector("#recipes");
+
+    const html = recipeList.map(recipe => recipeTemplate(recipe)).join("");
+
+    container.innerHTML = html;
+}
+
+
+function getRandomRecipe(list){
+    const index = Math.floor(Math.random() * list.length);
+    return list[index];
+}
+
+
+function searchRecipes(query){
+    const lower = query.toLowerCase();
+
+    return recipes.filter(recipe =>
+        recipe.name.toLowerCase().includes(lower) ||
+        recipe.description.toLowerCase().includes(lower) ||
+        recipe.tags.join(" ").toLowerCase().includes(lower)
+    );
+}
+
+
+document.querySelector("#search").addEventListener("input", function(e){
+    const results = searchRecipes(e.target.value);
+    renderRecipes(results);
+});
+
+
+const randomRecipe = getRandomRecipe(recipes);
+renderRecipes([randomRecipe]);
