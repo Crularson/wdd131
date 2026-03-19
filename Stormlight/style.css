@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #1E2657;
+    --secondary-color: #454B73;
+    --accent1-color: #9D695A;
+    --accent2-color: #F1F3F1;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: "IM Fell French Canon SC", Garamond, Serif;
+    --paragraph-font: Helvetica, Verdana, sans-serif;
+
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #1E2657;
+    /* headlines on a white background */
+    --headline-color-on-color: #F1F3F1;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #1E2657;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #F1F3F1;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #454B73;
+    --nav-link-color: #F1F3F1;
+    --nav-background-color: #454B73;
+    --nav-hover-link-color: #454B73;
+    --nav-hover-background-color: #F1F3F1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.logo_link {
+    width: 100px;
+}
+
+.logo {
+    max-width: 100px;
+    display: block;
+}
+
+#logo-box {
+    z-index: 1000;
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+#navigation {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+}
+
+a {
+    color: var(--nav-link-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--nav-background-color);
+    z-index: 1000;
+}
+
+nav a {
+    padding: 36.25px;
+    font-size: 1.5em;
+    font-family: var(--heading-font);
+
+}
+
+nav a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+}
+/* Home page */
+img {
+    max-width: 100%;
+}
+
+#title-div img {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    z-index: -2;
+    object-fit: cover;
+
+}
+
+#title-div {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+#title-div h1,
+#title-div h2 {
+    position: relative;
+    color: var(--headline-color-on-color);
+    z-index: -1;
+    font-size: 3em;
+    top: 50px;
+}
+
+
+
+#home-box {
+    background-color: var(--primary-color);
+    color: var(--paragraph-color-on-color);
+    justify-items: center;
+    padding: 5em;
+    line-height: 2.35em;
+    font-size: 1.75em;
+    position: relative;
+    top: 100vh;
+    z-index: 2;
+}
+
+#home-box p {
+    max-width: 600px;
+    text-align: center;
+
+}
+
+#map {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    object-fit: cover;
+}
+
+/* Magic page */
+.here-link{
+    background-color: var(--accent1-color);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    padding: 0px 4px;
+    border-radius: 5px;
+}
+.here-link:hover{
+    background-color: var(--headline-color-on-white);
+}
+#magic-h1{
+    text-align: center;
+    padding: 45px;
+    color: var(--paragraph-color-on-white);
+}
+#magic-h3{
+    font-size: 1.35em;
+    padding-bottom: 30px;
+    color: var(--paragraph-color-on-white);
+}
+#magic-main{
+    margin: 0 20%;
+    padding-bottom: 5%;
+}
+.placard{
+    margin: 0 auto;
+    display: block;
+}
+.magic-p{
+    text-indent: 5%;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    color: var(--paragraph-color-on-white);
+}
+/* World Gallery */
+#gallery-hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.gallery-hero-img{
+    max-width: 50%;
+    display: block;
+}
+
+#gallery-header{
+    grid-column: 1/3;
+    text-align: center;
+    padding: 3%;
+    font-size: 2.2em;
+    color: var(--headline-color-on-white);
+}
+.gallery-p{
+    color: var(--paragraph-color-on-color);
+}
+#gallery-main{
+    margin: 0 10%;
+}
+#section-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    margin-top: 3%;
+    gap: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 12px;
+}
+#section-1 p{
+    grid-row: 1/3;
+    font-size: 1.7em;
+    align-content: center;
+}
+#section-1 img{
+    max-width: 100%;
+    box-shadow: 5px 5px 10px #00000075;
+    border-radius: 10px;
+}
+#section-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px;
+    margin-top: 10%;
+    gap: 20px;
+    background-color: var(--accent1-color);
+    border-radius: 12px;
+}
+#section-2 p{
+    grid-row: 1/3;
+    font-size: 1.7em;
+    align-content: center;
+}
+#section-2 img{
+    max-width: 100%;
+    box-shadow: 5px 5px 10px #00000075;
+    border-radius: 10px;
+}
+
+
+
+#gallery-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 2%;
+    gap: 1%;
+    padding-bottom: 10%;
+    padding-top: 15%;
+}
+#gallery-grid img{
+  max-width: 75%;  
+  transition: transform .4s;
+  box-shadow: 5px 5px 10px #1E265788;
+  border: 5px solid var(--headline-color-on-white);
+  border-radius: 15px;
+}
+#gallery-grid img:hover{
+    transform: scale(1.8);
+
+}
+
+
+
+
+
+footer {
+    background-color: var(--nav-background-color);
+    display: grid;
+    grid-template-columns: 100px 80px 1fr;
+   
+}
+.footer-home{
+     z-index: 1000;
+    width: 100%;
+    position: absolute;
+    top: 318vh;
+}
+
+#site-link {
+    grid-column: 2/3;
+    background-color: var(--accent1-color);
+    padding: 10px 0px;
+    align-content: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+    align-self: center;
+
+}
+
+#site-link:hover {
+    background-color: var(--primary-color);
+}
+
+footer p {
+    color: var(--paragraph-color-on-color);
+    text-align: center;
+    max-width: 350px;
+    align-content: center;
+    justify-self: center;
+}
+footer a{
+    font-family: var(--paragraph-font);
+}
+
+footer p a {
+    background-color: var(--accent1-color);
+    font-weight: bold;
+    padding: 0px 3px;
+    border-radius: 5px;
+}
+
+footer a:hover {
+    background-color: #1E2657;
+    color: var(--accent2-color);
+}
