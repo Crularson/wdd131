@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stormlight's Majesty</title>
     <link rel="stylesheet" href="style.css">
+    <script src="gallery.js" defer></script>
 </head>
 
 <body>
@@ -29,45 +30,40 @@
         <div id="gallery-hero">
             <h2 id="gallery-header">Roshar: A World full of Alien Majesty!</h2>
         </div>
-            <section id="section-1">
-                <p class="gallery-p">Roshar is one of Brandson Sanderson's most alien worlds. One of the biggest things about Roshar that
-                    shapes the
-                    lives of nearly everyone in the world is the Highstorm. The Highstorm is a massive hurricane that
-                    rages across the
-                    world from east to west regularly. It is able to be predicted. The entire eastern and central parts
-                    of Roshar have
-                    no soil. There are only plains of stone and rock. This, of course, has massive affects on the flora
-                    and fauna of
-                    Roshar.</p>
-                    <img class="gallery-hero-img" src="Stormlight-images/oathbringer.jpg" alt="oathbringer cover art">
-                </section>
-            <section id="section-2">
-                <p class="gallery-p">There are many illustrations of plantlife in the art gallery. They generally end up in laits created
-                    by
-                    ledges of stone creating a safer environment to grow because of the protection from the extreme
-                    winds of the
-                    Highstorm. The fauna is far more interesting, however. Nearly all fauna are crustacean. They have
-                    exoskeletons or
-                    a hybrid of thick skin and chitin like the axehound in one of the illustrations. The farther west
-                    the storm goes
-                    the weaker it gets and so it influences those that live there less than those who live in the east.
-                </p>
-                <img class="gallery-hero-img" src="Stormlight-images/wordsofradiance.jpg" alt="oathbringer cover art">
-            </section>
+        <section id="section-1">
+            <p class="gallery-p">Roshar is one of Brandson Sanderson's most alien worlds. One of the biggest things
+                about Roshar that
+                shapes the
+                lives of nearly everyone in the world is the Highstorm. The Highstorm is a massive hurricane that
+                rages across the
+                world from east to west regularly. It is able to be predicted. The entire eastern and central parts
+                of Roshar have
+                no soil. There are only plains of stone and rock. This, of course, has massive affects on the flora
+                and fauna of
+                Roshar.</p>
+            <img class="gallery-hero-img" src="Stormlight-images/oathbringer.jpg" alt="oathbringer cover art">
+        </section>
+        <section id="section-2">
+            <p class="gallery-p">There are many illustrations of plantlife in the art gallery. They generally end up in
+                laits created
+                by
+                ledges of stone creating a safer environment to grow because of the protection from the extreme
+                winds of the
+                Highstorm. The fauna is far more interesting, however. Nearly all fauna are crustacean. They have
+                exoskeletons or
+                a hybrid of thick skin and chitin like the axehound in one of the illustrations. The farther west
+                the storm goes
+                the weaker it gets and so it influences those that live there less than those who live in the east.
+            </p>
+            <img class="gallery-hero-img" src="Stormlight-images/wordsofradiance.jpg" alt="oathbringer cover art">
+        </section>
 
         <div id="gallery-grid">
-            <img src="Stormlight-images/Axehound.jpg" alt="image of an Axehound">
-            <img src="Stormlight-images/Chasmfiend.jpeg" alt="image of a Chasmfiend">
-            <img src="Stormlight-images/Chull.jpg" alt="image of Chull">
-            <img src="Stormlight-images/Chull_Life_Cycle.jpeg" alt="image of a Chull's lifecycle">
-            <img src="Stormlight-images/Lait-flora.jpeg" alt="image of flora in a lait of stone">
-            <img src="Stormlight-images/Plants.jpg" alt="image of sketched plantlife">
-            <img src="Stormlight-images/Rockbuds.jpg" alt="image of Rockbuds">
-            <img src="Stormlight-images/Santhid.jpeg" alt="image of a Santhid">
-            <img src="Stormlight-images/Shalebark.jpg" alt="image of Shalebark">
-            <img src="Stormlight-images/Shardplate.jpeg" alt="image of Shardplate">
-            <img src="Stormlight-images/Skyeel.jpg" alt="image of a Skyeel">
-            <img src="Stormlight-images/Whitespine.jpeg" alt="image of a Whitespine">
+
+        </div>
+        <div id="pagination">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
         </div>
     </main>
     <footer>
@@ -79,6 +75,10 @@
             directly from Brandon's website. </p>
     </footer>
 
+    <div id="image-modal" class="modal">
+        <span id="close-modal">&times;</span>
+        <img id="modal-img" src="" alt="Expanded gallery image">
+    </div>
 </body>
 
 </html>
